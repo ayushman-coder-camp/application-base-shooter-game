@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Blitz | PlayZone Arcade</title>
+    <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/base-blitz.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="element">
+        <span>Score: <div class="scoreLabel">0</div></span>
+    </div>
+    <div class="audioButton">
+        <i class="fa-solid fa-volume-high" style="position: absolute; right: 8px; padding: 30px; background: #ff0; font-size: 28px; cursor: pointer;"></i>
+    </div>
+    <div class="gameOverModal">
+        <h3>Game Over</h3>
+        <h1>Your Score</h1>
+        <h1 class="score">0</h1>
+        <button id="restartBtnEl">Restart Game</button>
+    </div>
+    <div class="startGameModal">
+        <h3>Base Blitz</h3>
+        <button id="startBtnEl">Start Game</button>
+    </div>
+    <canvas></canvas>
+    <script src="/static/js/Game2/game2.js" type="module"></script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" 
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    ></script>
+</body>
+</html>
